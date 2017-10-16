@@ -1,0 +1,281 @@
+/* 首页的css */
+<style type="text/css"> 
+@charset "utf-8";
+*{
+  margin:0px;
+  padding:0px;
+}
+html
+{
+  font-size:62.5%;
+}
+.btn
+{
+  padding: 6px 6px;
+}
+body,html
+{
+  color: #122E67;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  min-height: 100%;
+  height: 100%;
+}
+/* 手机兼容时，表格能够横向移动而页面不移动 */
+.col-lg-12
+{
+  overflow:auto;
+}
+.alert-danger
+{
+  overflow: auto;
+}
+/* 登录页背景设置 */
+#logContent
+{
+  font-family: "Microsoft YaHei";SimSun,SimHei;/* 微软雅黑优先，宋体和黑体滞后 */
+  margin-top: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #082b4f url("../images/login-bg.png") repeat 0 0; 
+  color: #000;
+  position:fixed;
+}
+/* 登录标题 */
+#loginTitle
+{
+  margin-top: 8rem;
+  height: 4rem;
+  letter-spacing: 6px;
+  color: #fff;
+  text-align: center;
+  font: 100 4rem/4rem "Microsoft YaHei",'微软雅黑',SimSun,SimHei;/*写中文是为了兼容opera浏览器*/
+ /*font:font-style font-variant font-weight font-size/line-heightfont-family*/
+ text-shadow:2px 2px #31B0D5;
+}
+/* 登录框设置 */
+#loginFrame
+{
+  margin:4rem auto;
+  text-align: center;
+}
+#loginFrame .col-sm-3
+{
+  margin: 2rem auto;
+}
+/*导航栏样式设计*/
+/* 导航栏的高度 */
+.navbar
+{
+  background-color: #261C1A;
+  height: 60px;
+/*   border-bottom: 3px solid #F2FCB8; */
+}
+/*手机自适应页面时，菜单折叠按钮*/
+.navbar-toggle
+{
+  height: 40px;
+  width: 40px;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 10px;
+}
+/*导航栏左侧标题设计*/
+.navbar-brand
+{
+  height: 60px;
+  font: 400 28px/28px "Microsoft YaHei",'微软雅黑',SimSun,SimHei;
+  margin: 0;
+  padding: 0 20px 0 20px;
+  line-height: 60px;
+}
+/*菜单项目样式设计*/
+.navbar-nav li a
+{
+  height: 60px;
+  font: 400 18px/28px "Microsoft YaHei",'微软雅黑',SimSun,SimHei;
+  margin: 0 auto;
+  padding: 0;
+  padding:0 20px 0 20px;
+  line-height: 60px;
+}
+/*下拉菜单的样式设计*/
+.dropdown-menu li a
+{
+  margin: 0;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  padding-left: 60px;
+}
+/* .dropdown-menu>li>a:focus,.dropdown-menu>li>a:hover */
+/*表格头部*/
+thead
+{
+  background-color: #F7F7F7;
+  color: #000000;
+}
+thead a
+{
+  color: #000000;
+}
+/* 主容器*/
+.content-body
+{
+  display: block;
+  padding: 0;
+  width: 98%;
+  overflow-y: auto;
+  /* border: 1px solid red; */
+  height: 100%; 
+  margin: auto;
+  margin-top: 6px;
+  box-shadow: 0 0 1rem #ccc;
+  min-height: 100%;
+  height: 100%;
+}
+/*容器标题*/
+.content-title
+{
+  padding-left: 1.5rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  margin-bottom: 1.2rem;
+  font-size: 3.2rem;/* 一个rem相当于10px,因为html62.5% */
+  border-bottom: 2px solid #DDDDD0;
+}
+/*编辑分组的弹窗*/
+#group-edit
+{
+  width:60%;
+  height: 30em;
+  margin: auto;
+  margin-top: 60px;
+  box-shadow: 0 0 1rem #ccc;
+  background: #fff;
+}
+/* #searchByGroup
+{
+  position: relative;
+} */
+
+/* 用户列表user-list的css */
+#searchByGroupDiv
+{
+  overflow: auto;
+}
+#searchByGroup
+{
+  width: 210px;
+}
+#searchByGroupBtn,#searchByLoginBtn
+{
+  height: 32px;
+  margin-left: 213px;
+  margin-top: -56px;
+}
+/* 用户列表，修改用户信息 */
+#user-group-alter
+{
+  margin-top: 50px;
+}
+.form-control
+{
+  box-shadow: 0 0 0 0;
+}
+/* 文本框 */
+#search_login2
+{
+  width: 100px; 
+}
+/* 包含查询账号和姓名的div盒子 */
+#search_login
+{
+  margin-bottom: 10px;
+}
+/*下拉菜单*/
+#search_login1
+{
+  margin-top: -34px;
+  margin-left: 101px;
+  width:109px;
+}
+#search_login2:focus
+{
+    outline:none;
+    border-color: #ccc;
+    box-shadow: none; 
+}
+#search_login1:focus
+{
+  outline:none;
+  border-color: #ccc;
+  box-shadow: none; 
+}
+/*月份下拉菜单的宽度*/
+#month
+{
+  width: 40%;
+  margin-bottom: 10px;
+}
+
+#downloadReport
+{
+  margin-bottom: 10px;
+}
+
+#btnDiv
+{
+  margin-bottom: 10px;
+}
+
+#timeDiv
+{
+  margin-bottom: 10px;
+}
+/*commission-list佣金报表*/
+
+/* profit-list业务量的css编辑 */
+.profitDiv
+{
+  color: #333;
+  width: 265px;
+  float: right;
+  margin-right: 10px;
+  /* position: absolute;
+     */  
+  top: 15px;/* 和alert的padding统一 */
+  right: 20px;
+  padding: 10px;
+  border: 1px solid #555;/*会占用内部的宽度，即原来定义的300px*/
+}
+/* 业务情况的标题 */
+.profitTitle
+{
+  color: #337AB7;
+  width: 100px;
+  height: 26px;
+  margin-left: 90px;
+  margin-top: -23px; 
+  line-height: 26px;
+  background: #F2DEDE;
+}
+/*业务情况每行的显示*/
+.profitRow
+{
+  height: 30px;
+  line-height: 30px;
+}
+/*编辑无效利润的弹出框设计*/
+#noProfitLoginDiv
+{
+  width:60%;
+  height: 30em;
+  margin: auto;
+  margin-top: 60px;
+  box-shadow: 0 0 1rem #ccc;
+  background: #fff;
+}
+
+
+</style>
